@@ -23,7 +23,9 @@ img {
 }
 
 .menu {
-    margin: 1rem 0 0 1rem;     /*altura x L.Direita x baixo x L.Esquerda */
-    color: white;
-    background: rgb(197, 40, 61)
+    margin: 1rem 0 0 1rem; /* Altura x Lado Direito x Base x Lado Esquerdo */
+    color: white; /* Cor do texto */
+    background: rgb(197, 40, 61); /* Cor de fundo */
+    border-radius: 8px; /* Remove bordas arredondadas */
+   
 }

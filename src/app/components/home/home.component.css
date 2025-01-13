@@ -1,0 +1,17 @@
+.card {
+    text-align: center;
+    width: 50%;  /*largura*/
+    margin: auto;
+    background: rgb(197, 40, 61)
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+mat-card-title{
+    text-align: center;
+    margin: 0;
+}
