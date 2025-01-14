@@ -8,7 +8,7 @@
     background: rgb(197, 40, 61)
 }
 
-img {
+.image1 {
     width: 120px;
     height: 7rem;
     margin: .8rem .1rem .1rem 2.5rem;
@@ -22,10 +22,4 @@ img {
     margin-right: .6rem;
 }
 
-.menu {
-    margin: 1rem 0 0 1rem; /* Altura x Lado Direito x Base x Lado Esquerdo */
-    color: white; /* Cor do texto */
-    background: rgb(197, 40, 61); /* Cor de fundo */
-    border-radius: 8px; /* Remove bordas arredondadas */
-   
-}
+

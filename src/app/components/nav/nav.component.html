@@ -1,6 +1,6 @@
 <mat-drawer-container class="container" autosize>
     <mat-drawer #drawer class="sidenav" mode="side">
-        <img src="assets/img/index-svgrepo-com.svg" alt="">
+        <img src="assets/img/index-svgrepo-com.svg" alt="grafico" class="image1">
      <mat-nav-list class="nav-list">
         <a mat-list-item routerLink="home">
             <i class="material-icons">home</i>
@@ -27,10 +27,8 @@
     </mat-drawer>
   
     <div class="sidenav-content">
-      <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
-        <mat-icon>menu</mat-icon>
-      </button>
+        <app-header [drawer]="drawer"></app-header>
       <router-outlet></router-outlet>
     </div>
-  
+
   </mat-drawer-container>
