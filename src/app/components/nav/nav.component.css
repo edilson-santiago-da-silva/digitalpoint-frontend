@@ -24,4 +24,13 @@
     margin-right: .6rem;
 }
 
-
+@media (max-width: 768px) {
+    .sidenav {
+       width: 10rem;
+       text-align: center;
+    }
+    .image1{
+        display: none;
+        text-align: center;
+    }
+}

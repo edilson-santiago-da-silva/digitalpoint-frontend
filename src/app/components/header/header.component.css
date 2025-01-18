@@ -1,23 +1,57 @@
 .top-bar {
-    top: 0;
-    left: 0;
-    height: 8%;
-    width: 100%; /* Ocupa toda a largura */
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
     background: rgb(197, 40, 61); /* Cor de fundo */
 }
 
+.menu {
+    margin-right: 20px;
+}
+
 .image2{
-    width: 200px; 
-    position: relative;
-    left: 70px;
+    height: 40px; 
+    margin-right: auto;
  }
 
 .spacer {
-    flex: 1; /* Empurra os ícones para a direita */
+    flex-grow: 2;
 }
 
-button {
-    margin: 0 10px; /* Espaçamento entre os ícones */
-}
+  .login {
+    font-weight: bold; /* Texto em negrito */
+    font-family: new-kansas;
+    margin-right: 30px;
+    background-color: white; /* Cor de fundo  */
+    color: rgb(197, 40, 61); /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Mostra o cursor de "mão" */
+    transition: background-color 0.3s ease; /* Animação ao passar o mouse */
+  }
+
+  /* Estilo ao passar o mouse */
+.login:hover {
+    background-color: darkgray; /* Fundo azul mais escuro */
+  }
+  
+  /* Estilo ao pressionar o botão */
+  .login:active {
+    background-color: darkgray; /* Fundo ainda mais escuro */
+  }
+  
+  /* Torna o botão responsivo */
+  .login {
+    width: auto; /* Ajusta ao conteúdo */
+    max-width: 100%; /* Não excede o limite da tela */
+  }
+
+  @media (max-width: 400px) {
+    .image2{
+        display: none;
+    }
+  }
+
