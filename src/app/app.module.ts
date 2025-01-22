@@ -29,7 +29,8 @@ import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
+import { EmployeeListComponent } from './components/employee/employee-list/employee-list.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EmployeeListComponent } from './employee/employee-list/employee-list.co
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
