@@ -1,44 +1,53 @@
 .container {
-    height: 100%;
-    background: rgb(197, 40, 61);;
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- .form {
-    width: 30rem;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    padding: 4rem 1rem;
-    border-radius: 1rem;
- }
- h1 {
-    width: 100%;
-    text-align: center;
-    
- }
- img {
-    height: 12rem;
-    width: 100%;
-    margin: 1.5rem auto 1.5rem auto;
- }
- .full-width {
-    width: 100%;
-    color: dimgray;
-    border-radius: 0.5rem;
-    margin-bottom: 16px;
-   
- }
-
- button {
-    margin-top: 1.5rem;
+   height: 100%;
+   background: linear-gradient(135deg, #c5283d, #8b1e2c);
+   display: flex;
+   align-items: center;
+   justify-content: center;
  }
  
- .field{
-    color: dimgray;
-    margin-left: 15px;
+ .form {
+   width: 100%;
+   max-width: 350px;
+   background-color:#ffffff;
+   padding: 2.5rem;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   text-align: center;
+ }
+ 
+ h1 {
+   font-size: 1.8rem;
+   color: #333;
+   margin-bottom: 1.5rem;
+ }
+ 
+ img {
+   height: 180px;
+   margin-bottom: 1.5rem;
+ }
+ 
+ .full-width {
+   width: 100%;
+   margin-bottom: 0.5rem;
+ }
+ 
+ .login-btn {
+   color:#343434;
+   padding: 0.8rem;
+   font-size: 1rem;
+   border-radius: 5px;
+ }
+ 
+ :host ::ng-deep .mat-form-field-outline {
+   color: #343434 !important; /* Cor da borda padrão */
+ }
+ 
+ :host ::ng-deep .mat-form-field-outline-thick {
+   color: #343434!important; /* Cor quando focado */
  }
 
- .input{
-    color: dimgray;
+ :host ::ng-deep .mat-form-field-label {
+   color:#343434 !important; /* Cor desejada */
  }
+ 

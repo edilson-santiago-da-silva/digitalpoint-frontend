@@ -1,34 +1,38 @@
 <div class="container">
-    <form class="form mat-elevation-z8">
-
-       <h1>digitalpoint</h1>
-
-       <img src="assets/img/undraw_two-factor-authentication_8tds.svg" alt="Help Desk - Dicas de um DEV">
-
-       <mat-form-field class="full-width  mat-elevation-z8" >
-          <mat-label class="field"> Usuário</mat-label>
-          <input 
-          [formControl]="name"
-          required
-          [(ngModel)]="creds.name" 
-          name="name"
-          class="input" 
-          matInput placeholder="Ex. MARIA">
-       </mat-form-field>
-
-       <mat-form-field class="full-width mat-elevation-z8" >
-          <mat-label class="field">Senha</mat-label>
-          <input 
-          [formControl]="password"
-          required
-          [(ngModel)]="creds.password" 
-          name="password" 
-          class="input" 
-          type="password" 
-          matInput placeholder="Ex. 123">
-       </mat-form-field>
-
-       <button (click)="login()" [disabled]="!validFields()" class="full-width mat-elevation-z4" mat-stroked-button color="primary">login</button>
-       
-    </form>
+   <form class="form mat-elevation-z8">
+     <h1>DigitalPoint</h1>
+ 
+     <img src="assets/img/undraw_two-factor-authentication_8tds.svg" alt="tela-login">
+ 
+     <mat-form-field appearance="outline" class="full-width">
+       <mat-label>Usuário</mat-label>
+       <input 
+         matInput
+         [formControl]="name"
+         required
+         [(ngModel)]="creds.name" 
+         name="name"
+         placeholder="Digite seu usuário">
+     </mat-form-field>
+ 
+     <mat-form-field appearance="outline" class="full-width">
+       <mat-label>Senha</mat-label>
+       <input 
+         matInput
+         [formControl]="password"
+         required
+         [(ngModel)]="creds.password" 
+         name="password" 
+         type="password" 
+         placeholder="Digite sua senha">
+     </mat-form-field>
+ 
+     <button 
+       class="full-width login-btn" 
+       (click)="login()" 
+       [disabled]="!validFields()">
+       Login
+     </button>
+   </form>
  </div>
+ 
