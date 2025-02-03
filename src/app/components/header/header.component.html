@@ -4,11 +4,11 @@
     </button>
   
     <!-- logo do site -->
-    <img src="assets/img/logoPoint.png" alt="logo" class="image2">
+    <img src="assets/img/logoPoint.png" alt="logo" class="image">
 
      <!-- Espaçador para alinhar à direita -->
     <span class="spacer"></span>
 
-    <button class="login">Login</button>
+    <span class="user" *ngIf="user">Bem-vindo, {{ user }}!</span>
     
   </mat-toolbar>

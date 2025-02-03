@@ -32,11 +32,19 @@ export class LoginComponent implements OnInit {
   login(){
     this.service.authenticate(this.creds).subscribe(response => {
       this.service.successfulLogin(response.headers.get('Authorization').substring(7));
+      this.loginName();
       this.router.navigate([''])
     }, () => {
       this.toast.error('Usuário e/ou senha inválidos')
     } )
   }
+
+  loginName() {
+    if (this.creds.name && this.creds.password) {
+    this.service.login(this.creds.name); // Armazena o usuário logado
+    console.log('Usuário logado:', this.creds.name); // Verifique se o nome está correto
+  }
+}
 
   validFields(): boolean{
     return this.name.valid && this.password.valid
