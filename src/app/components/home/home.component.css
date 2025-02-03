@@ -20,14 +20,14 @@
 }
 
 .text h1 {
-  font-family: new-kansas;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 45px; /* Tamanho do título */
   line-height: 1.2; /* Espaçamento entre linhas */
   margin-bottom: 10px; /* Espaçamento inferior do título */
 }
 
 .text p {
-  font-family: new-kansas;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px; /* Tamanho do parágrafo */
   line-height: 1.5; /* Espaçamento entre linhas no parágrafo */
 }

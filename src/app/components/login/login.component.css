@@ -16,10 +16,8 @@
    text-align: center;
  }
  
- h1 {
-   font-size: 1.8rem;
-   color: #333;
-   margin-bottom: 1.5rem;
+ .image {
+  height: 80px;
  }
  
  img {
