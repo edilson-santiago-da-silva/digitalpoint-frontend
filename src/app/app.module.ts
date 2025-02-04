@@ -29,8 +29,8 @@ import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { EmployeeListComponent } from './components/employee/employee-list/employee-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { PointComponent } from './components/point/point.component';
 import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -39,8 +39,8 @@ import { ToastrModule } from 'ngx-toastr';
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    EmployeeListComponent,
-    LoginComponent
+    LoginComponent,
+    PointComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-export interface Employee{
+export interface Point{
     id?: any;
     name: string;
     pasword: string
