@@ -1,58 +1,59 @@
-<!-- tabela-horarios.component.html -->
+<!-- point.component.html -->
+<h1>Ponto mês de janeiro</h1>
+<div class = "buttonregister">
+<button class="mat-elevation-z8" mat-stroked-button color= "grey">Bater ponto</button>
+</div>
+
+<div class="filter">
+  <mat-form-field appearance="standard" class="custom-filter">
+    <mat-label>Filtrar</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Digite para filtrar" #input>
+  </mat-form-field>
+</div>
+
 <div class="mat-elevation-z8">
-  <table mat-table [dataSource]="dataSource">
-    
-    <ng-container matColumnDef="dataAtual">
-      <th mat-header-cell *matHeaderCellDef>Data Atual</th>
-      <td mat-cell *matCellDef="let element">{{ element.dataAtual }}</td>
+  <table mat-table [dataSource]="dataSource" class="mat-table">
+
+    <!-- Data Atual -->
+    <ng-container matColumnDef="workDay">
+      <th mat-header-cell *matHeaderCellDef> Data </th>
+      <td mat-cell *matCellDef="let element"> {{ element.workDay }} </td>
     </ng-container>
 
-    <ng-container matColumnDef="horarioEntrada">
-      <th mat-header-cell *matHeaderCellDef>Entrada</th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.horarioEntrada || '--' }}
-        <button *ngIf="isButtonAvailable('entrada', element)" (click)="registrarHorario('entrada', element)" mat-raised-button color="green">
-          Registrar +
-        </button>
-      </td>
+    <!-- Entrada -->
+    <ng-container matColumnDef="entry">
+      <th mat-header-cell *matHeaderCellDef> Entrada </th>
+      <td mat-cell *matCellDef="let element"> {{ element.entry || '--' }} </td>
     </ng-container>
 
-    <ng-container matColumnDef="horarioSaidaAlmoco">
-      <th mat-header-cell *matHeaderCellDef>Saída Almoço</th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.horarioSaidaAlmoco || '--' }}
-        <button *ngIf="isButtonAvailable('saidaAlmoco', element)" (click)="registrarHorario('saidaAlmoco', element)" mat-raised-button color="green">
-          Registrar +
-        </button>
-      </td>
+    <!-- Saída Almoço -->
+    <ng-container matColumnDef="exitLaunch">
+      <th mat-header-cell *matHeaderCellDef> Saída Almoço </th>
+      <td mat-cell *matCellDef="let element"> {{ element.exitLaunch || '--' }} </td>
     </ng-container>
 
-    <ng-container matColumnDef="horarioEntradaAlmoco">
-      <th mat-header-cell *matHeaderCellDef>Entrada do Almoço</th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.horarioEntradaAlmoco || '--' }}
-        <button *ngIf="isButtonAvailable('entradaAlmoco', element)" (click)="registrarHorario('entradaAlmoco', element)" mat-raised-button color="green">
-          Registrar +
-        </button>
-      </td>
+    <!-- Entrada Almoço -->
+    <ng-container matColumnDef="entryLaunch">
+      <th mat-header-cell *matHeaderCellDef> Entrada Almoço </th>
+      <td mat-cell *matCellDef="let element"> {{ element.entryLaunch || '--' }} </td>
     </ng-container>
 
-    <ng-container matColumnDef="horarioSaida">
-      <th mat-header-cell *matHeaderCellDef>Horário de Saída</th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.horarioSaida || '--' }}
-        <button *ngIf="isButtonAvailable('saida', element)" (click)="registrarHorario('saida', element)" mat-raised-button color="green">
-          Registrar +
-        </button>
-      </td>
+    <!-- Saída -->
+    <ng-container matColumnDef="exit">
+      <th mat-header-cell *matHeaderCellDef> Saída </th>
+      <td mat-cell *matCellDef="let element"> {{ element.exit || '--' }} </td>
     </ng-container>
 
-    <ng-container matColumnDef="minutosExtras">
-      <th mat-header-cell *matHeaderCellDef>Minutos Extras</th>
-      <td mat-cell *matCellDef="let element">{{ element.minutosExtras }}</td>
+    <!-- Minutos Extras -->
+    <ng-container matColumnDef="minExtra">
+      <th mat-header-cell *matHeaderCellDef> Minutos Extras </th>
+      <td mat-cell *matCellDef="let element"> {{ element.minExtra }} </td>
     </ng-container>
 
+    <!-- Cabeçalho e Linhas da Tabela -->
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
   </table>
+  
 </div>

@@ -1,49 +1,78 @@
-.mat-elevation-z8 {
-    margin: 20px auto;
-    width: 80%;  /* Ajuste a largura conforme necessário */
-    border-radius: 10px; /* Bordas arredondadas da tabela */
-    overflow: hidden; /* Para garantir que as bordas arredondadas sejam visíveis */
-  }
+ .mat-elevation-z8 {
+   margin: 20px auto;
+   width: 80%;
+   /* Ajuste a largura conforme necessário */
+   border-radius: 10px;
+   /* Bordas arredondadas da tabela */
+   overflow: hidden;
+   /* Para garantir que as bordas arredondadas sejam visíveis */
+ }
 
-  mat-header-cell, mat-cell {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px; /* Bordas arredondadas para as células */
-  }
+ mat-header-cell,
+ mat-cell {
+   text-align: center;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   /* Bordas arredondadas para as células */
+ }
 
-button {
-    margin-left: 10px;
-    font-size: 12px;
-    padding: 4px 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
+ mat-form-field {
+   width: 100%;
+ }
 
-  /* Ajustando o alinhamento da tabela */
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  mat-header-row, mat-row {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Alternando cores de linhas */
-  mat-row:nth-child(odd) {
-    background-color: #fafafa;
-  }
-  mat-row:nth-child(even) {
-    background-color: #f1f1f1;
-  }
+ h1 {
+   margin-top: 2rem;
+   width: 100%;
+   text-align: center;
+   margin-bottom: 2rem;
+ }
 
-  
+ .buttonregister {
+   margin: 0.1rem auto;
+   width: 100%;
+   text-align: center;
+ }
+
+ ::ng-deep .custom-filter .mat-form-field-ripple {
+   background-color: grey !important;
+   /* Efeito ripple ao focar no campo */
+ }
+ 
+ ::ng-deep .custom-filter .mat-form-field-label {
+  color: grey !important;  /* Cor do label */
+}
+
+ .filter {
+   margin: 0.1rem auto 1rem auto;
+   width: 80%;
+   text-align: center;
+   color: grey;
+ }
+
+
+ button:hover {
+   background-color: #b8bfb8;
+ }
+
+ /* Ajustando o alinhamento da tabela */
+ table {
+   width: 100%;
+   border-collapse: collapse;
+ }
+
+ mat-header-row,
+ mat-row {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+ }
+
+ /* Alternando cores de linhas */
+ mat-row:nth-child(odd) {
+   background-color: #fafafa;
+ }
+
+ mat-row:nth-child(even) {
+   background-color: #f1f1f1;
+ }
