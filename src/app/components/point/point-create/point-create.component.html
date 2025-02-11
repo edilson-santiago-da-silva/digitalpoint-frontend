@@ -1,0 +1,30 @@
+<div class="container mat-elevation-z8">
+    <h1 class="fullWidth">Bater Ponto</h1>
+    <form class="form">
+      <div class="row">
+        <mat-form-field appearance="legacy">
+          <mat-label>ENTRADA</mat-label>
+          <input matInput [value]="horarios.entrada || '00:00'" readonly>
+          <button *ngIf="!horarios.entrada" mat-button (click)="registrarHorario('entrada')">Registrar</button>
+        </mat-form-field>
+  
+        <mat-form-field appearance="legacy">
+          <mat-label>SAÍDA ALMOÇO</mat-label>
+          <input matInput [value]="horarios.saidaAlmoco || '00:00'" readonly>
+          <button *ngIf="!horarios.saidaAlmoco" mat-button (click)="registrarHorario('saidaAlmoco')">Registrar</button>
+        </mat-form-field>
+  
+        <mat-form-field appearance="legacy">
+          <mat-label>ENTRADA ALMOÇO</mat-label>
+          <input matInput [value]="horarios.entradaAlmoco || '00:00'" readonly>
+          <button *ngIf="!horarios.entradaAlmoco" mat-button  (click)="registrarHorario('entradaAlmoco')">Registrar</button>
+        </mat-form-field>
+  
+        <mat-form-field appearance="legacy">
+          <mat-label>SAÍDA</mat-label>
+          <input matInput [value]="horarios.saida || '00:00'" readonly>
+          <button *ngIf="!horarios.saida" mat-button  (click)="registrarHorario('saida')">Registrar</button>
+        </mat-form-field>
+      </div>
+    </form>
+  </div>

@@ -1,0 +1,33 @@
+.container {
+  margin: 8rem auto;
+  width: 80%;
+  text-align: center;
+  padding: 20px;
+}
+
+.row {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  flex-wrap: wrap;
+}
+
+mat-form-field {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+mat-form-field input {
+  text-align: center;
+  width: 80px; /* Ajuste conforme necessário */
+}
+
+button {
+  margin-left: 10px;
+  height: 36px;
+  color: rgb(90, 85, 85);
+  background-color: white;
+}

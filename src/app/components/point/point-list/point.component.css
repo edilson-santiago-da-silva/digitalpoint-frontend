@@ -1,11 +1,8 @@
  .mat-elevation-z8 {
    margin: 20px auto;
    width: 80%;
-   /* Ajuste a largura conforme necessário */
    border-radius: 10px;
-   /* Bordas arredondadas da tabela */
    overflow: hidden;
-   /* Para garantir que as bordas arredondadas sejam visíveis */
  }
 
  mat-header-cell,
@@ -14,7 +11,6 @@
    padding: 10px;
    border: 1px solid #ddd;
    border-radius: 5px;
-   /* Bordas arredondadas para as células */
  }
 
  mat-form-field {
@@ -35,10 +31,9 @@
  }
 
  ::ng-deep .custom-filter .mat-form-field-ripple {
-   background-color: grey !important;
-   /* Efeito ripple ao focar no campo */
+   background-color: grey !important; /* Efeito ripple ao focar no campo */
  }
- 
+
  ::ng-deep .custom-filter .mat-form-field-label {
   color: grey !important;  /* Cor do label */
 }

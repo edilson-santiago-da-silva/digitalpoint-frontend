@@ -30,8 +30,9 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
-import { PointComponent } from './components/point/point.component';
+import { PointComponent } from './components/point/point-list/point.component';
 import { ToastrModule } from 'ngx-toastr';
+import { PointCreateComponent } from './components/point/point-create/point-create.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ToastrModule } from 'ngx-toastr';
     HomeComponent,
     HeaderComponent,
     LoginComponent,
-    PointComponent
+    PointComponent,
+    PointCreateComponent
   ],
   imports: [
     BrowserModule,
