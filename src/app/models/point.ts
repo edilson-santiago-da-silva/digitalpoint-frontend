@@ -1,6 +1,10 @@
 export interface Point{
     id?: any;
-    name: string;
-    pasword: string
-    profile: string[];  
-}
+    userId: any;
+    userName: string
+    workDay: string;
+    entry: string;
+    exitLaunch: string;
+    entryLaunch: string;
+    exit: string;
+  }

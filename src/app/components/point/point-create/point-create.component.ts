@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Point } from 'src/app/models/point';
 
 @Component({
   selector: 'app-point-create',
@@ -7,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PointCreateComponent implements OnInit {
 
-  horarios = {
-    entrada: '',
-    saidaAlmoco: '',
-    entradaAlmoco: '',
-    saida: ''
+  newPoint: Point = {
+    id: null,
+    userId: 1,
+    userName: 'Bianca Santos TESTE-CREATE',
+    workDay: '02/10/2024',
+    entry: '08:00',
+    exitLaunch: '12:00',
+    entryLaunch: '12:00',
+    exit: '16:00'
   };
-
+  
   constructor() { }
 
   ngOnInit(): void {
@@ -24,7 +29,7 @@ export class PointCreateComponent implements OnInit {
     const horarioFormatado = agora.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     
     // Define o horário e faz o botão sumir
-    this.horarios[tipo] = horarioFormatado;
+    this.newPoint[tipo] = horarioFormatado;
   }
 }
 

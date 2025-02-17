@@ -17,4 +17,13 @@ export class PointService {
 
     return this.http.get<Point[]>(`${API_CONFIG.baseUrl}/points`, {headers});
   }
+
+  createPoint(point: Point): Observable<Point> {
+    return this.http.post<Point>(`${API_CONFIG.baseUrl}/points`, point);
+  }
+
+  UpdatePoint(id: any, point: Point): Observable<Point> {
+    return this.http.put<Point>(`${API_CONFIG.baseUrl}/points`, point);
+  }
+
 }
